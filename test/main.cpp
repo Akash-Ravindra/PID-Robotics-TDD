@@ -5,9 +5,9 @@
  * @brief Runs all the tests described in the test file
  * @version 0.1
  * @date 2022-09-30
- * 
+ *
  * @copyright Copyright (c) 2022
- * 
+ *
  */
 #include <gtest/gtest.h>
 

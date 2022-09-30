@@ -20,14 +20,15 @@ int main() {
   pid::PidController controller(2.0, 1.0, 0.0);
 
   double current_value = 10.5;
-  auto tar_num = std::stod(tar);   
+  auto tar_num = std::stod(tar);
   std::cout << "Current value " << current_value << "\nController params"
-            << std::get<0>(controller.getControllerParams()) <<", "
-            << std::get<1>(controller.getControllerParams()) <<", "
-            << std::get<2>(controller.getControllerParams()) << "\n"<<
-            "Target value "<< tar_num<<"\n"<<
-            "Calculate output "<<controller.compute(tar_num, current_value)<<"\n"<<
-            "Error "<<controller.getError();
+            << std::get<0>(controller.getControllerParams()) << ", "
+            << std::get<1>(controller.getControllerParams()) << ", "
+            << std::get<2>(controller.getControllerParams()) << "\n"
+            << "Target value " << tar_num << "\n"
+            << "Calculate output " << controller.compute(tar_num, current_value)
+            << "\n"
+            << "Error " << controller.getError();
 
   return 0;
 }
