@@ -13,10 +13,24 @@
 
 using namespace pid;
 
+PidController::PidController(double p, double i, double d):kp{p}, ki{i}, kd{d}{
 
+}
 PidController::PidController(){
 
 }
 PidController::~PidController(){
-    
+
+}
+
+double PidController::compute(double target, double curr){
+    return 0.0;
+}
+
+std::tuple<double, double, double> PidController::getControllerParams(){
+    return std::tuple(0.0,0.0,0.0);
+}
+
+double PidController::getError(double t, double c){
+
 }
