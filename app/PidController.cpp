@@ -1,6 +1,7 @@
 /**
  * @file PidController.cpp
  * @author Akash Ravindra (aravind2@umd.edu)
+ * @author Sparsh Jaiswal (sjaiswal@umd.edu)
  * @brief 
  * @version 0.1
  * @date 2022-09-29
@@ -28,9 +29,9 @@ double PidController::compute(double target, double curr){
 }
 
 std::tuple<double, double, double> PidController::getControllerParams(){
-    return std::tuple(0.0,0.0,0.0);
+    return std::tuple<double, double, double>(kp,ki,kd);
 }
 
-double PidController::getError(double t, double c){
-
+double PidController::getError(){
+    return error;
 }
