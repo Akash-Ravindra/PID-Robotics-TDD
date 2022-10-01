@@ -21,14 +21,14 @@ int main() {
 
   double current_value = 10.5;
   auto tar_num = std::stod(tar);
-  std::cout << "Current value " << current_value << "\nController params"
+  std::cout << "Current value " << current_value << "\nController params "
             << std::get<0>(controller.getControllerParams()) << ", "
             << std::get<1>(controller.getControllerParams()) << ", "
             << std::get<2>(controller.getControllerParams()) << "\n"
             << "Target value " << tar_num << "\n"
             << "Calculate output " << controller.compute(tar_num, current_value)
             << "\n"
-            << "Error " << controller.getError();
+            << "Error " << controller.getError() <<std::endl;
 
   return 0;
 }
