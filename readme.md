@@ -3,6 +3,9 @@
 ## Part A
  - **Driver** : Akash Ravindra (UID - 117422085)
  - **Navigator** : Sparsh Jaiswal (UID - 117433968)
+## Part B
+ - **Driver** : Adithya G Singh (UID - 117505047)
+ - **Navigator** : Joseph Pranadeer Reddy Katakam (UID - 117517958)
  ## UML Class Diagram
  !["Class Diagram"](./UML_ClassDiagram.png)
 
