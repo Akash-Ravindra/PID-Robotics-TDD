@@ -6,6 +6,9 @@
 ## Part B
  - **Driver** : Adithya G Singh (UID - 117505047)
  - **Navigator** : Joseph Pranadeer Reddy Katakam (UID - 117517958)
+ ## ToDo:
+    Add functionality and tests to handle user input for dt from user 
+    and dt=0 case
  ## UML Class Diagram
  !["Class Diagram"](./UML/UML_ClassDiagram.png)
 
