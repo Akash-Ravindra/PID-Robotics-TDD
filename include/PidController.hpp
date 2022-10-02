@@ -16,21 +16,21 @@ namespace pid {
 class PidController {
  private:
   /// @brief Proportional Gain
-  const double kp = 0.0;
+  const double kp_ = 0.0;
   /// @brief Integral Gain
-  const double ki = 0.0;
+  const double ki_ = 0.0;
   /// @brief Derivative Gain
-  const double kd = 0.0;
+  const double kd_ = 0.0;
   /// @brief Time Step
-  const double dt = 0.1;
+  const double dt_ = 0.1;
   /// @brief Previous error accumulator
-  double prev_error = 0.0;
+  double prev_error_ = 0.0;
   /// @brief The current error calculated
-  double error = 0.0;
+  double error_ = 0.0;
 
  public:
   /// @brief Current output calculate from compute
-  double curr_output = 0.0;
+  double curr_output_ = 0.0;
   /// @brief Default Initializer
   PidController();
   /// @brief Initialize the
@@ -39,7 +39,8 @@ class PidController {
   /// @param[in] d Derivative Gain
   PidController(double p, double i, double d);
   ~PidController();
-  /// @brief Compute the PID
+  /// @brief Using the error between target velocity and the reference velocity
+  /// calculate the velocity out put
   /// @param target Reference value = Value to reach
   /// @param curr Current value
   /// @return Controller Output

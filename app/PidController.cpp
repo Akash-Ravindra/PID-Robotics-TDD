@@ -10,17 +10,25 @@
  *
  */
 
-#include "PidController.hpp"
+#include "../include/PidController.hpp"
+#include <cstdlib>
+#include <iostream>
+#include <limits>
 
 pid::PidController::PidController(double p, double i, double d)
-    : kp{p}, ki{i}, kd{d} {}
+    : kp_{p}, ki_{i}, kd_{d} {}
 pid::PidController::PidController() {}
 pid::PidController::~PidController() {}
 
-double pid::PidController::compute(double target, double curr) { return 0.0; }
-
-std::tuple<double, double, double> pid::PidController::getControllerParams() {
-  return std::tuple<double, double, double>(kp, ki, kd);
+double pid::PidController::compute(double target, double curr) {
+  error_ = target - curr;
+  prev_error_ += error_ * dt_;
+  curr_output_ = kp_*error_ + ki_*prev_error_ + kd_  * error_ / dt_;
+  return curr_output_;
 }
 
-double pid::PidController::getError() { return error; }
+std::tuple<double, double, double> pid::PidController::getControllerParams() {
+  return std::tuple<double, double, double>(kp_, ki_, kd_);
+}
+
+double pid::PidController::getError() { return error_; }

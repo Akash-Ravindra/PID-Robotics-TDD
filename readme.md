@@ -3,13 +3,17 @@
 ## Part A
  - **Driver** : Akash Ravindra (UID - 117422085)
  - **Navigator** : Sparsh Jaiswal (UID - 117433968)
+## Part B
+ - **Driver** : Adithya G Singh (UID - 117505047)
+ - **Navigator** : Joseph Pranadeer Reddy Katakam (UID - 117517958)
+ ## ToDo:
+    Add functionality and tests to handle user input for dt from user 
+    and dt=0 case
  ## UML Class Diagram
- !["Class Diagram"](./UML_ClassDiagram.png)
+ !["Class Diagram"](./UML/UML_ClassDiagram.png)
 
 ----
 ## C++ Boilerplate
-[![Build Status](https://travis-ci.org/dpiet/cpp-boilerplate.svg?branch=master)](https://travis-ci.org/dpiet/cpp-boilerplate)
-[![Coverage Status](https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master)
 ---
 
 ## Overview
